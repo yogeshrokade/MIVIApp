@@ -1,0 +1,327 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height = "match_parent" android:paddingLeft= "@dimen/activity_horizontal_margin"
+    android:paddingRight = "@dimen/activity_horizontal_margin"
+    android:paddingTop = "@dimen/activity_vertical_margin"
+    android:paddingBottom = "@dimen/activity_vertical_margin" tools:context = ".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_titile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:text="Product" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="94dp"
+        android:minHeight="25px"
+        android:minWidth="25px">
+
+        <TextView
+            android:id="@+id/txt_productname"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="28dp"
+            android:text="Name: "
+            android:textColor="#9933FF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/txt_productname"
+            android:text="Name"
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:minHeight="25px"
+        android:minWidth="25px">
+
+        <TextView
+            android:id="@+id/txt_lbl_price"
+            android:layout_width="147dp"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="32dp"
+            android:text="Price: "
+            android:textColor="#9933FF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/txt_lbl_price"
+            android:text="Price"
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:minHeight="25px"
+        android:minWidth="25px">
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="147dp"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="31dp"
+            android:text="Data Balance: "
+            android:textColor="#9933FF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_databalnce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/tv_balance"
+            android:text="Balance"
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_centerHorizontal="true"
+        android:minHeight="25px"
+        android:minWidth="25px">
+
+        <TextView
+            android:id="@+id/tv_expirydate"
+            android:layout_width="147dp"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="35dp"
+            android:text="Expiry Date: "
+            android:textColor="#9933FF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_expirydate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/tv_expirydate"
+            android:text="Expiry Date"
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relativeLayout4"
+        android:layout_centerHorizontal="true"
+        android:minHeight="25px"
+        android:minWidth="25px">
+
+        <TextView
+            android:id="@+id/tv_paymenttype"
+            android:layout_width="147dp"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="35dp"
+            android:text="Type: "
+            android:textColor="#9933FF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_paymenttype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/tv_paymenttype"
+            android:text="Type"
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/txt_productname"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginStart="118dp"-->
+        <!--android:layout_marginTop="147dp"-->
+        <!--android:text="Name"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="20dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/txt_name"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignStart="@+id/txt_price"-->
+        <!--android:layout_alignTop="@+id/txt_productname"-->
+        <!--android:text="name"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="20dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/txt_lbl_price"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignStart="@+id/txt_productname"-->
+        <!--android:layout_marginTop="193dp"-->
+        <!--android:text="Price"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="20dp"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/txt_price"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignEnd="@+id/tv_titile"-->
+        <!--android:layout_alignTop="@+id/txt_lbl_price"-->
+        <!--android:text="Price"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="20dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_balance"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignEnd="@+id/txt_productname"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:text="Balance"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="20dp"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/txt_databalnce"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignStart="@+id/txt_name"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:text="Balance"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="20dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_expirydate"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignEnd="@+id/txt_productname"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="191dp"-->
+        <!--android:text="Expiry Date"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="20dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/txt_expirydate"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignStart="@+id/txt_name"-->
+        <!--android:layout_alignTop="@+id/tv_expirydate"-->
+        <!--android:text="Expiry Date"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="20dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_databalance"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignEnd="@+id/txt_productname"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="220dp"-->
+        <!--android:text="Data Balance"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="20dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/txt_databalnce"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignStart="@+id/txt_name"-->
+        <!--android:layout_alignTop="@+id/tv_databalance"-->
+        <!--android:text="Data Balance"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="20dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_expirydate"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignEnd="@+id/txt_productname"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="184dp"-->
+        <!--android:text="Expiry Date"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="20dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/txt_expirydate"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignStart="@+id/txt_name"-->
+        <!--android:layout_alignTop="@+id/tv_expirydate"-->
+        <!--android:text="Expiry Date"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="20dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_paymenttype"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignEnd="@+id/txt_productname"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="150dp"-->
+        <!--android:text="Payment Type"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="20dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/txt_paymenttype"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignStart="@+id/txt_name"-->
+        <!--android:layout_alignTop="@+id/tv_paymenttype"-->
+        <!--android:text="Payment Type"-->
+        <!--android:textColor="#000"-->
+        <!--android:textSize="20dp" />-->
+
+
+</RelativeLayout>
